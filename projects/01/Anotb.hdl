@@ -1,0 +1,9 @@
+//anotb = 0100
+CHIP Anotb {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    Not(in=b, out=notb);
+    And(a=a, b=notb, out=out);
+}

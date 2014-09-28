@@ -1,0 +1,9 @@
+//Notab = 0010
+CHIP Notab {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    Not(in=a, out=nota);
+    And(a=b, b=nota, out=out);
+}

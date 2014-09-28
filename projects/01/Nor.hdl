@@ -1,0 +1,10 @@
+//nor = 1000
+
+CHIP Nor {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    Or(a=a, b=b, out=x);
+    Not(in=x, out=out);
+}

@@ -1,0 +1,9 @@
+//nexor = 1001
+CHIP Nexor {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    Xor(a=a, b=b, out=x);
+    Not(in=x, out=out);
+}
