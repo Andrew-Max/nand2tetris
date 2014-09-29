@@ -1,0 +1,8 @@
+CHIP Zeroer {
+    IN in, sel;
+    OUT out;
+
+    PARTS:
+    Not(in=sel, out=notsel);
+    And(a=in, b=notsel, out=out);
+}
