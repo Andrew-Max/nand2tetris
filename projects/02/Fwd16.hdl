@@ -1,0 +1,8 @@
+CHIP Fwd16 {
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+    Not16(in=in, out=nota);
+    Not16(in=nota, out=out);
+}
