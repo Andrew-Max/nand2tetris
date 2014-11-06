@@ -14,5 +14,9 @@ CHIP Bit {
     OUT out;
 
     PARTS:
-    // Put your code here:
+    Mux(a=outd, b=in, sel=load, out=x);
+    DFF(in=x, out=outd, out=out);
 }
+
+
+// Uses the multiplexor to decide to output the current input or the previous output
